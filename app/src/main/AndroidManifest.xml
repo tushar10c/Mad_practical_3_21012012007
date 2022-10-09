@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.madpractical3_21012022009">
+    package="com.example.Mad_practical_3_21012012007">
 
     <application
         android:allowBackup="true"
@@ -16,7 +16,7 @@
         <activity
             android:noHistory="true"
             android:label="Registration UI-MAD Practical"
-            android:name=".RegistrationActivity"
+            android:name="com.example.Mad_practical_3_21012012007.RegistrationActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -27,10 +27,10 @@
         <activity
             android:noHistory="true"
             android:label="Login UI-MAD Practical"
-            android:name=".LoginActivity"
+            android:name="com.example.Mad_practical_3_21012012007.LoginActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name="com.example.Mad_practical_3_21012012007.MainActivity"
             android:exported="false">
 
         </activity>

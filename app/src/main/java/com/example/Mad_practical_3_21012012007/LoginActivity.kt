@@ -1,26 +1,26 @@
-package com.example.madpractical3_21012022009
+package com.example.Mad_practical_3_21012012007
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.Mad_practical_3_21012012007.databinding.ActivityLoginBinding
 
-import com.example.madpractical3_21012022009.databinding.ActivityRegistrationBinding
 
-class RegistrationActivity : AppCompatActivity() {
-    private lateinit var binding: ActivityRegistrationBinding
+class LoginActivity : AppCompatActivity() {
+    private lateinit var binding: ActivityLoginBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityRegistrationBinding.inflate(layoutInflater)
+        binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         setSupportActionBar(binding.toolbar)
-        binding.bottomNavigationView.selectedItemId = R.id.bottom_nav_reg
+        binding.bottomNavigationView.selectedItemId = R.id.bottom_nav_login
         binding.bottomNavigationView.setOnItemSelectedListener{it1->
             when(it1.itemId)
             {
-                R.id.bottom_nav_login->
+                R.id.bottom_nav_reg->
                 {
-                    Intent(this,LoginActivity::class.java).also {startActivity(it)}
+                    Intent(this,RegistrationActivity::class.java).also {startActivity(it)}
                 }
             }
             return@setOnItemSelectedListener true

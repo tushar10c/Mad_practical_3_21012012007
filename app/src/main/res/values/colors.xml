@@ -11,5 +11,6 @@
     <color name="shrine_pink_900">#FF442C2E</color>
     <color name="purple">#6200EE</color>
     <color name="pink">#DB3091</color>\
-    <color name="cardviewborder">#79747E</color>
+    <color name="card_view_back_color">#E6D3FB</color>
+    <color name="icon_color">#DB3D91</color>
 </resources>
